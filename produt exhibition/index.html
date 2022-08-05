@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Product Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+        <meta name="robots" content="noindex,follow"/>
+    </head>
+    <body>
+        <main class="container">
+            <!--Left Collumn / Watch Image-->
+            <div class="left-col">
+                <img data-image="black" src="imagens/black.jpg" alt="black-watch">
+                <img data-image="blue" src="imagens/azul.jpg" alt="blue-watch">
+                <img data-image="white" src="imagens/branco.jpg" alt="white-watch">
+                <img data-image="gold" src="imagens/gold.jpg" alt="gold-watch">
+                <img data-image="silver" src="imagens/silver.jpg" alt="silver-watch">
+                <img data-image="green" src="imagens/verde.jpg" alt="green-watch">
+                <img data-image="red" src="imagens/vermelho.jpg" alt="red-watch">
+            </div>
+            <!--Right Collumn / Watch Image-->
+            <div class="right-col">
+                <!--Product Description-->
+                <div class="product-description">
+                    <span>Watches</span>
+                    <h1>Apple Watch Series 7</h1>
+                    <p>The preferred choice of a vast range of acclaimed tech specialists. 
+                        This sports bracelet is made of resistant fluoroelastomer and
+                        It's surprisingly soft and comes with a pin-shaped clasp. 
+                    </p>
+                </div>
+                <!--Product Configuration-->
+                <div class="product-configuration">
+                    <!--Product Color-->
+                    <div class="color-config">
+                        <span>Color</span>
+                        <div class="color-choose">
+                            <div>
+                                <input data-image="black" type="radio" id="black" name="color" value="black" checked>
+                                <label for="black"><span></span></label>
+                            </div>
+                            <div>
+                                <input data-image="blue" type="radio" id="blue" name="color" value="blue" checked>
+                                <label for="blue"><span></span></label>
+                            </div>
+                            <div>
+                                <input data-image="white" type="radio" id="white" name="color" value="white" checked>
+                                <label for="white"><span></span></label>
+                            </div>
+                            <div>
+                                <input data-image="gold" type="radio" id="gold" name="color" value="gold" checked>
+                                <label for="gold"><span></span></label>
+                            </div>
+                            <div>
+                                <input data-image="silver" type="radio" id="silver" name="color" value="silver" checked>
+                                <label for="silver"><span></span></label>
+                            </div>
+                            <div>
+                                <input data-image="green" type="radio" id="green" name="color" value="green" checked>
+                                <label for="green"><span></span></label>
+                            </div>
+                            <div>
+                                <input data-image="red" type="radio" id="red" name="color" value="red" checked>
+                                <label for="red"><span></span></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Product Wristband Size-->
+                    <div class="wrist-config">
+                        <span>Wristband Size</span>
+                        <div class="band-choose">
+                            <button>41mm</button>
+                            <button>45mm</button>
+                        </div>
+                        <a href="#">How to configurate your watch</a>
+                    </div>
+                </div>
+                <!--Product Price-->
+                <div class="product-price">
+                    <span>399$</span>
+                    <a href="#" class="cart-btn">Add to cart</a>
+                </div>
+            </div>
+        </main>
+        <!--Scripts-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="Script.js"></script>
+    </body>
+</html>

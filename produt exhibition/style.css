@@ -1,0 +1,224 @@
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-seerif;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    margin-left: 30%;
+}
+
+.left-col{
+    width: 65%;
+    position: relative;
+}
+
+.right-col{
+    width: 35%;
+    margin-top: 60px; 
+}
+
+.left-col img{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.left-col img.active{
+    opacity: 1;
+}
+
+.product-description{
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+
+.product-description span{
+    font-size: 18px;
+    color: #358ED7;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.product-description h1{
+    font-weight: 300;
+    font-size: 52px;
+    color: #43484D;
+    letter-spacing: -2px;
+}
+.product-description p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #86939E;
+    line-height: 24px;
+}
+/*-------------------------------Product Color--------------------------------------*/
+.color-config{
+    margin-bottom: 30px;
+}
+
+.color-choose div{
+    display: inline-block;
+}
+
+input[type="radio"] {  
+    opacity:0;                                      
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:40px;
+    height:40px;
+    margin: 10px 4px 0 0px;    
+    vertical-align: middle;                   
+    cursor:pointer;
+    border-radius: 50%;
+}
+
+input[type="radio"] + label span {
+    border: 2px solid #FFFFFF;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
+}
+
+.color-choose input[type="radio"]#black + label span {
+   background-color: black;
+}
+
+.color-choose input[type="radio"]#blue + label span {
+    background-color: rgb(88, 98, 146);
+}
+
+.color-choose input[type="radio"]#white + label span {
+    background-color: rgb(250, 250, 250);
+}
+
+.color-choose input[type="radio"]#gold + label span {
+    background-color: goldenrod;
+}
+
+.color-choose input[type="radio"]#silver + label span {
+    background-color: silver;
+}
+
+.color-choose input[type="radio"]#green + label span {
+    background-color: rgb(68, 92, 58);
+}
+
+.color-choose input[type="radio"]#red + label span {
+    background-color: rgb(218, 17, 17);
+}
+
+input[type="radio"]:checked + label span{
+     background-image: url(imagens/check-mark-svgrepo-com\ \(1\).svg);
+     background-repeat: no-repeat;
+     background-position: center;  
+}
+
+/*------------------------------Product Wristband-----------------------------------------------------*/
+.band-choose{
+    margin-bottom: 20px;
+}
+
+.band-choose button{
+    border: 2px solid #E1E8EE;
+    border-radius: 6px;
+    padding: 13px 20px;
+    font-size: 14px;
+    color: #5E6977;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all .5s;
+    margin-top: 10px;
+}
+
+.band-choose button:hover, .band-choose button:active, .band-choose button:focus{
+    border: 2px solid #86939E;
+    outline: none;
+}
+
+.wrist-config{
+    border-bottom: 1px solid #E1E8EE;
+    margin-bottom: 20px;
+}
+
+.wrist-config a{
+    color: #358ED7;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    margin: 10px 0;
+    display: inline-block;
+}
+
+.wrist-config a:before{
+    content: "?" ;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 2px solid rgba(53, 142, 215, 0.5);
+    display: inline-block;
+    text-align: center;
+    line-height: 16px;
+    opacity: 0.5;
+    margin-right: 5px;
+}
+/*------------------------------Product Price---------------------------------------------------*/
+.product-price{
+    display: flex;
+    align-items: center;
+}
+
+.product-price span{
+    font-size: 26px;
+    font-weight: 300;
+    color: #43474D;
+    margin-right: 20px;
+}
+
+.cart-btn{
+    display: inline-block;
+    background-color: #7DC855;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 12px 30px;
+    transition: all .5s;
+}
+
+.cart-btn:hover{
+    background-color: #64af3d;
+}
+
+/*----------------------------------Responsive-------------------------------------------------*/
+@media(max-width: 940px){
+    .container{
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .left-col, .right-col{
+        width: 100%;
+    }
+    .left-col img{
+        width: 300px;
+        right: 0;
+        top: -65x;
+        left: initial;
+    }
+}
+
+@media(max-width: 535px){
+    .left-col img{
+        width: 220px;
+        top: -85px;
+    }
+}
